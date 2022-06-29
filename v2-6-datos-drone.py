@@ -24,8 +24,8 @@ def draw():
     screen.fill((0, 0, 0))
     font.render_to(screen, (40, 40), f"Battery: {battery}", (0, 255, 0))
     font.render_to(screen, (40, 60), f"Roll: {roll}", (0, 255, 0))
-    font.render_to(screen, (40, 80), f"Pitch: {roll}", (0, 255, 0))
-    font.render_to(screen, (40, 100), f"Yaw: {roll}", (0, 255, 0))
+    font.render_to(screen, (40, 80), f"Pitch: {pitch}", (0, 255, 0))
+    font.render_to(screen, (40, 100), f"Yaw: {yaw}", (0, 255, 0))
     font.render_to(screen, (40, 120), f"Height: {height}", (0, 255, 0))
 
 app.run(draw)
