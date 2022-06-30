@@ -3,8 +3,8 @@ import pygame
 from pygame.locals import *
 from djitellopy import tello
 
-me = tello.Tello()
-me.connect()
+# me = tello.Tello()
+# me.connect()
 
 pygame.init()
 screen = pygame.display.set_mode((600, 600))
@@ -14,11 +14,17 @@ def draw():
     global battery, roll, pitch, yaw, height
     
     # Get data
-    battery = me.get_battery()
-    roll = me.get_roll()
-    pitch = me.get_pitch()
-    yaw = me.get_yaw()
-    height = me.get_height()
+#     battery = me.get_battery()
+#     roll = me.get_roll()
+#     pitch = me.get_pitch()
+#     yaw = me.get_yaw()
+#     height = me.get_height()
+
+    battery = 1
+    roll = 2
+    pitch = 3
+    yaw = 4
+    height = 5
 
     # Draw
     screen.fill((0, 0, 0))
@@ -27,6 +33,10 @@ def draw():
     font.render_to(screen, (40, 80), f"Pitch: {pitch}", (0, 255, 0))
     font.render_to(screen, (40, 100), f"Yaw: {yaw}", (0, 255, 0))
     font.render_to(screen, (40, 120), f"Height: {height}", (0, 255, 0))
+    
+    #indicador bateria
+    pygame.draw.rect(screen, (128,128,128), [450,40, 100, 30])
+    
 
 app.run(draw)
 

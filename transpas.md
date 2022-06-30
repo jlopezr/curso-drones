@@ -1,3 +1,6 @@
+# Obtener datos del drone
+
+```python
 import app
 import pygame
 from pygame.locals import *
@@ -29,3 +32,23 @@ def draw():
     font.render_to(screen, (40, 120), f"Height: {height}", (0, 255, 0))
 
 app.run(draw)
+```
+
+# Actividad 1.
+
+Dibujar un indicador de bateria
+
+# Posible solucion
+
+```python
+ #indicador bateria
+    pygame.draw.rect(screen, (128,128,128), [450,40, 100, 30])
+    if battery > 20:
+        pygame.draw.rect(screen, (0,255,0), [450,40, battery, 30])
+    else:
+        pygame.draw.rect(screen, (255,0,0), [450,40, battery, 30])
+    pygame.draw.rect(screen, (0,0,0), [450,40, 100, 30],2)    
+```
+
+# Mover el drone
+

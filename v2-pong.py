@@ -26,8 +26,6 @@ def draw():
     pygame.draw.circle(screen, (0,255,0), pos, 10)
     
     
-    
-
     pygame.draw.circle(screen, (0,0,255), (x,y), 10)
     if app.getKey("UP"):
         y=y-1

@@ -11,5 +11,9 @@ print(battery)
 # Enlairament, moviments i aterrar
 me.takeoff()
 me.move_forward(300)
+me.move_left(200)
+me.move_right(400)
+me.move_left(200)
 me.move_back(300)
+
 me.land()
