@@ -33,7 +33,7 @@ def draw_filled_arc(screen, color, pos, radius, start, end):
     size = pil_image.size
     data = pil_image.tobytes()
     image = pygame.image.fromstring(data, size, mode)
-    image_rect = image.get_rect(center=screen.get_rect().center)
+    image_rect = image.get_rect(topleft=pos)
     
     # blit image
     screen.blit(image, image_rect)
