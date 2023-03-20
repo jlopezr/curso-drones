@@ -43,29 +43,29 @@ def draw():
     pygame.draw.rect(screen, (0,0,0), [450,40, 100, 30],2)        
     
     #movimiento
-    if app.get_key("LEFT"):
-        me.move_left(10)
-    if app.get_key("RIGHT"):
-        me.move_right(10)
+    if app.getKey("LEFT"):
+        me.move_left(20)
+    if app.getKey("RIGHT"):
+        me.move_right(20)
 
-    if get_key("UP"):
-        me.move_forward(10)
-    if get_key("DOWN"):
-        me.move_backward(10)
+    if app.getKey("UP"):
+        me.move_forward(20)
+    if app.getKey("DOWN"):
+        me.move_backward(20)
 
-    if get_key("w"):
-        me.move_up(10)
-    if get_key("s"):
-        me.move_down(10)
+    if app.getKey("w"):
+        me.move_up(20)
+    if app.getKey("s"):
+        me.move_down(20)
 
-    if get_key("a"):
-        me.turn_left(20)
-    if get_key("d"):
-        me.turn_right(20)
+    if app.getKey("a"):
+        me.rotate_counter_clockwise(20)
+    if app.getKey("d"):
+        me.rotate_clockwise(20)
 
-    if get_key("t"):
+    if app.getKey("t"):
         me.takeoff()
-    if get_key("l"):
+    if app.getKey("l"):
         me.land()
 
 app.run(draw)
