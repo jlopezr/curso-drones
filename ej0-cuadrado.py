@@ -9,7 +9,7 @@ background = background.convert()
 background.fill((0, 0, 0))
 
 # Draw
-pygame.draw.rect(background, (255, 255, 0), [10, 10, 400,480])
+pygame.draw.rect(background, (237, 166, 208), [10, 10, 400,480])
 
 # Blit everything
 screen.blit(background, (0, 0))

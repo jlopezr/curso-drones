@@ -8,7 +8,7 @@ me.connect()
 
 pygame.init()
 screen = pygame.display.set_mode((600, 600))
-font = pygame.freetype.SysFont("Arial", 12)
+font = pygame.freetype.SysFont("Arial", 12) # escoje la fuente Arial a tamaño 12
 
 def draw():
     global battery, roll, pitch, yaw, height
@@ -22,6 +22,7 @@ def draw():
 
     # Draw
     screen.fill((0, 0, 0))
+    font.render_to(screen, (300, 300), "Hola JUAN", (255, 0, 0))
     font.render_to(screen, (40, 40), f"Battery: {battery}", (0, 255, 0))
     font.render_to(screen, (40, 60), f"Roll: {roll}", (0, 255, 0))
     font.render_to(screen, (40, 80), f"Pitch: {pitch}", (0, 255, 0))

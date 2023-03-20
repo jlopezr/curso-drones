@@ -3,4 +3,5 @@ from djitellopy import tello
 me = tello.Tello()
 me.connect()
 
-print(me.get_battery())
+battery = me.get_battery()
+print(battery)
