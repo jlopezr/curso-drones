@@ -51,7 +51,7 @@ def draw():
     if app.getKey("UP"):
         me.move_forward(20)
     if app.getKey("DOWN"):
-        me.move_backward(20)
+        me.move_back(20)
 
     if app.getKey("w"):
         me.move_up(20)
